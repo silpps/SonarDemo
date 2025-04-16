@@ -3,13 +3,13 @@ pipeline {
 
     environment {
         SONARQUBE_SERVER = 'SonarQubeServer'  // The name of the SonarQube server configured in Jenkins
-        SONAR_TOKEN = 'sqa_54c4ceb0ea69276981c844021664899db708e60d' // Store the token securely
+        SONAR_TOKEN = 'squ_0569cbdca765c7ca3497f63c0517715207b26f0d' // Store the token securely
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/ADirin/sep2_week5_inclass_s2.git'
+                git branch: 'master', url: 'https://github.com/silpps/SonarDemo.git'
             }
         }
 
